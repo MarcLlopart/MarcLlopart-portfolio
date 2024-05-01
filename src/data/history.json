@@ -1,0 +1,43 @@
+[
+    {
+      "role": "Data Scientist",
+      "organisation": "Banco Sabadell",
+      "startDate": "Dec, 2023",
+      "endDate": "Present",
+      "experiences": ["Develop and implement models to asses and quantify many risks.", 
+                      "Conduct thorough data analysis to identify patterns, trends and anomalies that may impact the bank’s risk exposure."],
+      "imageSrc": "history/bancosabadell.png"
+    },
+    {
+      "role": "Researcher & Developer on Web3",
+      "organisation": "Perpetuum Progress",
+      "startDate": "Feb, 2023",
+      "endDate": "Jul, 2023",
+      "experiences": ["Research on B2B payments methods for a Decentralized Data Space focused on mobility industry.", 
+                      "Intergration of Cross-Chain bridge in a permissioned blockchain based on PoA"],
+      "imageSrc": "history/pepro.png"
+    },
+    {
+      "role": "Data Scientist Intern",
+      "organisation": "Aily Labs",
+      "startDate": "Jul, 2022",
+      "endDate": "Sep, 2022",
+      "experiences": [
+        "Developed a Recommender Engine from Implicit Feedback",
+        "Created an ETL for Portfolio Data using SQL and Python"
+      ],
+      "imageSrc": "history/ailylabs.jpg"
+    },
+    {
+        "role": "Data Analyst",
+        "organisation": "SK Gaming",
+        "startDate": "Jul, 2018",
+        "endDate": "Dec, 2020",
+        "experiences": [
+          "Created reports to approach each match from data decisions with different strategies",
+          "Helped managers during off-season periods by scouting players to improve our team",
+          "Won several tournaments and achieved a Top2 World Champion in 2020 CRL Finals"
+        ],
+        "imageSrc": "history/skgaming.png"
+      }
+  ]

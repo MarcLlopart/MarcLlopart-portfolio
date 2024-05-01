@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Python",
+      "imageSrc": "skills/python.png"
+    },
+    {
+      "title": "R",
+      "imageSrc": "skills/r.png"
+    },
+    {
+      "title": "SQL",
+      "imageSrc": "skills/sql.png"
+    },
+    {
+      "title": "MongoDB",
+      "imageSrc": "skills/mongodb.png"
+    },
+    {
+      "title": "Sklearn",
+      "imageSrc": "skills/sklearn.png"
+    },
+    {
+      "title": "Pytorch",
+      "imageSrc": "skills/pytorch.png"
+    }
+    ,
+    {
+      "title": "Solidity",
+      "imageSrc": "skills/solidity.png"
+    },    
+    {
+        "title": "Javascript",
+        "imageSrc": "skills/js.png"
+    }
+  ]
