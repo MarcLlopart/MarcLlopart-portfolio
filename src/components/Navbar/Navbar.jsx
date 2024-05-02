@@ -52,7 +52,7 @@ export const Navbar = () => {
                         <a href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="assets/cv/cv_mllopart2024.pdf" download>My CV!</a>
+                        <a href="https://github.com/MarcLlopart/MarcLlopart-portfolio/raw/main/assets/cv/cv_mllopart2024.pdf" download>My CV!</a>
                     </li>
                 </ul>
             </div>
