@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(true); // Set menuOpen to true by default
+    const [menuOpen, setMenuOpen] = useState(false); // Set menuOpen to true by default
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
