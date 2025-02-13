@@ -1,9 +1,18 @@
 [
     {
+      "role": "Data Analyst",
+      "organisation": "Algorand Foundation",
+      "startDate": "Jul, 2024",
+      "endDate": "Present",
+      "experiences": ["Conducted an in-depth correlation analysis to identify key factors influencing crypto market capitalization, providing actionable insights for strategic decision-making.", 
+                      "Designed and implemented multiple interactive dashboards to monitor asset inflows and outflows on centralized exchanges and track the adoption trends of Liquid Staking Tokens."],
+      "imageSrc": "history/af.png"
+    },
+    {
       "role": "Data Scientist",
       "organisation": "Banco Sabadell",
       "startDate": "Dec, 2023",
-      "endDate": "Present",
+      "endDate": "Jul, 2024",
       "experiences": ["Develop and implement models to asses and quantify many risks.", 
                       "Conduct thorough data analysis to identify patterns, trends and anomalies that may impact the bank’s risk exposure."],
       "imageSrc": "history/bancosabadell.png"
