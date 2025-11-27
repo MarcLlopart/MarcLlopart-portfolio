@@ -1,47 +1,80 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+    padding: var(--spacing-lg) 10%;
+    z-index: 100;
+    background: rgba(12, 17, 28, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-card-border);
 }
 
-
 .title {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 700;
     font-family: var(--font-roboto);
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all var(--transition-fast);
+}
+
+.title:hover {
+    filter: brightness(1.2);
 }
 
 .menu {
     display: flex;
-
 }
 
 .menuItems {
     display: flex;
-    gap: 47px;
+    gap: 2.5rem;
     list-style: none;
 }
 
 .menuItems a {
-    font-size: 25px;
+    font-size: 1rem;
     color: var(--color-text);
     text-decoration: none;
     font-family: var(--font-roboto);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    position: relative;
 }
 
-@media screen and (max-width: 830px){
+.menuItems a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    transition: width var(--transition-fast);
+}
+
+.menuItems a:hover {
+    color: var(--color-primary);
+}
+
+.menuItems a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 830px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+        padding: var(--spacing-md) 10%;
     }
+
     .menu {
         position: absolute;
         right: 0;
@@ -51,22 +84,24 @@
         gap: 11px;
         z-index: 3;
     }
+
     .menuBtn {
         display: block;
         cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(77%) sepia(89%) saturate(2476%) hue-rotate(151deg) brightness(101%) contrast(101%);
     }
+
     .menuItems {
         display: none;
         flex-direction: column;
         align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: rgb(25, 55, 109);
-        background: linear-gradient(0deg, 
-        rgba(61, 25, 109, 0.2)0%,
-        rgb(86, 25, 109)100% );
-        padding: 25px 33px;
-        box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+        gap: 1rem;
+        border-radius: var(--radius-md);
+        background: var(--color-card-bg);
+        backdrop-filter: blur(20px);
+        border: 1px solid var(--color-card-border);
+        padding: var(--spacing-lg);
+        box-shadow: var(--glow-primary);
     }
 
     .menuOpen {

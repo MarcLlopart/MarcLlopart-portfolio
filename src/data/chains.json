@@ -1,0 +1,51 @@
+{
+    "algorand": {
+        "proficiency": 95,
+        "projects": 12,
+        "description": "Deep expertise in Algorand ecosystem analytics",
+        "kpis": [
+            {
+                "label": "Smart Contract Analysis",
+                "value": 95
+            },
+            {
+                "label": "DeFi Protocol Tracking",
+                "value": 90
+            },
+            {
+                "label": "Developer Activity",
+                "value": 92
+            },
+            {
+                "label": "Network Metrics",
+                "value": 88
+            }
+        ]
+    },
+    "evm": [
+        {
+            "name": "Ethereum",
+            "proficiency": 90
+        },
+        {
+            "name": "Base",
+            "proficiency": 85
+        },
+        {
+            "name": "Arbitrum",
+            "proficiency": 82
+        },
+        {
+            "name": "Polygon",
+            "proficiency": 80
+        },
+        {
+            "name": "Optimism",
+            "proficiency": 78
+        },
+        {
+            "name": "Avalanche",
+            "proficiency": 75
+        }
+    ]
+}

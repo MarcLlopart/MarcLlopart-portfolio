@@ -1,52 +1,59 @@
 [
-    {
-      "role": "Data Analyst",
-      "organisation": "Algorand Foundation",
-      "startDate": "Jul, 2024",
-      "endDate": "Present",
-      "experiences": ["Conducted an in-depth correlation analysis to identify key factors influencing crypto market capitalization, providing actionable insights for strategic decision-making.", 
-                      "Designed and implemented multiple interactive dashboards to monitor asset inflows and outflows on centralized exchanges and track the adoption trends of Liquid Staking Tokens."],
-      "imageSrc": "history/af.png"
-    },
-    {
-      "role": "Data Scientist",
-      "organisation": "Banco Sabadell",
-      "startDate": "Dec, 2023",
-      "endDate": "Jul, 2024",
-      "experiences": ["Develop and implement models to asses and quantify many risks.", 
-                      "Conduct thorough data analysis to identify patterns, trends and anomalies that may impact the bank’s risk exposure."],
-      "imageSrc": "history/bancosabadell.png"
-    },
-    {
-      "role": "Researcher & Developer on Web3",
-      "organisation": "Perpetuum Progress",
-      "startDate": "Feb, 2023",
-      "endDate": "Jul, 2023",
-      "experiences": ["Research on B2B payments methods for a Decentralized Data Space focused on mobility industry.", 
-                      "Intergration of Cross-Chain bridge in a permissioned blockchain based on PoA"],
-      "imageSrc": "history/pepro.png"
-    },
-    {
-      "role": "Data Scientist Intern",
-      "organisation": "Aily Labs",
-      "startDate": "Jul, 2022",
-      "endDate": "Sep, 2022",
-      "experiences": [
-        "Developed a Recommender Engine from Implicit Feedback",
-        "Created an ETL for Portfolio Data using SQL and Python"
-      ],
-      "imageSrc": "history/ailylabs.jpg"
-    },
-    {
-        "role": "Data Analyst",
-        "organisation": "SK Gaming",
-        "startDate": "Jul, 2018",
-        "endDate": "Dec, 2020",
-        "experiences": [
-          "Created reports to approach each match from data decisions with different strategies",
-          "Helped managers during off-season periods by scouting players to improve our team",
-          "Won several tournaments and achieved a Top2 World Champion in 2020 CRL Finals"
-        ],
-        "imageSrc": "history/skgaming.png"
-      }
-  ]
+  {
+    "role": "Data Analyst",
+    "organisation": "Algorand Foundation",
+    "startDate": "Jul, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Conducted comprehensive on-chain and off-chain data analyses to identify key factors driving crypto market trends, token performance, and ecosystem growth, delivering actionable insights to support strategic decision-making.",
+      "Designed and maintained end-to-end, data-driven dashboards tracking KPIs, OKRs, and ecosystem metrics across major Algorand dApps, enhancing visibility and decision-making through clear, narrative-driven visualizations.",
+      "Built automated reporting infrastructure using MCP servers and Python, streamlining analytics workflows and boosting productivity by 50×, while collaborating cross-functionally to ensure scalable, reliable data pipelines."
+    ],
+    "imageSrc": "history/af.png"
+  },
+  {
+    "role": "Data Scientist",
+    "organisation": "Banco Sabadell",
+    "startDate": "Dec, 2023",
+    "endDate": "Jul, 2024",
+    "experiences": [
+      "Develop and implement models to asses and quantify many risks.",
+      "Conduct thorough data analysis to identify patterns, trends and anomalies that may impact the bank’s risk exposure."
+    ],
+    "imageSrc": "history/bancosabadell.png"
+  },
+  {
+    "role": "Researcher & Developer on Web3",
+    "organisation": "Perpetuum Progress",
+    "startDate": "Feb, 2023",
+    "endDate": "Jul, 2023",
+    "experiences": [
+      "Research on B2B payments methods for a Decentralized Data Space focused on mobility industry.",
+      "Intergration of Cross-Chain bridge in a permissioned blockchain based on PoA"
+    ],
+    "imageSrc": "history/pepro.png"
+  },
+  {
+    "role": "Data Scientist Intern",
+    "organisation": "Aily Labs",
+    "startDate": "Jul, 2022",
+    "endDate": "Sep, 2022",
+    "experiences": [
+      "Developed a Recommender Engine from Implicit Feedback",
+      "Created an ETL for Portfolio Data using SQL and Python"
+    ],
+    "imageSrc": "history/ailylabs.jpg"
+  },
+  {
+    "role": "Data Analyst",
+    "organisation": "SK Gaming",
+    "startDate": "Jul, 2018",
+    "endDate": "Dec, 2020",
+    "experiences": [
+      "Created reports to approach each match from data decisions with different strategies",
+      "Helped managers during off-season periods by scouting players to improve our team",
+      "Won several tournaments and achieved a Top2 World Champion in 2020 CRL Finals"
+    ],
+    "imageSrc": "history/skgaming.png"
+  }
+]

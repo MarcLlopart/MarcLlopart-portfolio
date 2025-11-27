@@ -1,11 +1,40 @@
 :root {
-    /*Colours*/
-    --color-text: #fff;
-    --color-primary: #40025b;
-    --color-secondary: #740197;
-    --color-dark: hsl(307, 98%, 16%);
-    --color-bg: #ab0875;
+    /* Dark Tech Theme Colors */
+    --color-bg: #0C111C;
+    --color-bg-secondary: #141B2D;
+    --color-text: #E4E9F0;
+    --color-text-secondary: #A0AEC0;
+    --color-primary: #00EEF2;
+    --color-secondary: #33A8FF;
+    --color-accent: #00D4D8;
+    --color-dark: #060A12;
+    --color-card-bg: rgba(20, 27, 45, 0.6);
+    --color-card-border: rgba(0, 238, 242, 0.2);
 
-    /*Fonts*/
+    /* Glow Effects */
+    --glow-primary: 0 0 20px rgba(0, 238, 242, 0.4);
+    --glow-secondary: 0 0 20px rgba(51, 168, 255, 0.4);
+    --glow-strong: 0 0 30px rgba(0, 238, 242, 0.6), 0 0 60px rgba(0, 238, 242, 0.3);
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Fonts */
     --font-roboto: "Roboto";
+    --font-outfit: "Outfit";
 }

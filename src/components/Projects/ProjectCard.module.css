@@ -1,65 +1,164 @@
 @import "../../vars.css";
 
 .container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #bc57ba 0%, #2b1353 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 25px;
-  max-width: 345px;
+  position: relative;
+  background: var(--color-card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.image {
-  margin-bottom: 26px;
+.container:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  box-shadow: var(--glow-primary);
+  background: rgba(20, 27, 45, 0.8);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
 }
 
 .title {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  flex: 1;
+  font-family: var(--font-roboto);
+}
+
+.arrow {
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+  color: var(--color-primary);
+  transition: transform var(--transition-fast);
+}
+
+.container:hover .arrow {
+  transform: translateX(5px);
+}
+
+.sparklineContainer {
+  width: 100%;
+  height: 60px;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.8;
+  transition: opacity var(--transition-normal);
+}
+
+.container:hover .sparklineContainer {
+  opacity: 1;
+}
+
+.takeaway {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
   font-family: var(--font-roboto);
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
   font-family: var(--font-roboto);
 }
 
-.skills {
-  width: 90%;
-  margin-top: 10px;
+.techStack {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  gap: 4px;
-  list-style: none;
-}
-
-.skill {
-  font-size: 20px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 20px;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
   font-family: var(--font-roboto);
 }
 
-.links {
-  width: 100%;
-  margin-top: 26px;
-  display: flex;
-  justify-content: space-around;
-  font-family: var(--font-roboto);
-}
-
-.link {
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 25px;
+.techBadge {
+  padding: 0.4rem 0.8rem;
+  background: rgba(0, 238, 242, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
   font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 20px;
+  color: var(--color-primary);
+  transition: all var(--transition-fast);
+  font-family: var(--font-roboto);
+}
+
+.techBadge:hover {
+  background: rgba(0, 238, 242, 0.2);
+  box-shadow: 0 0 10px rgba(0, 238, 242, 0.3);
+}
+
+.ctaOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(6, 10, 18, 0.95), transparent);
+  padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
+  transform: translateY(100%);
+  transition: transform var(--transition-normal);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.ctaOverlay.visible {
+  transform: translateY(0);
+}
+
+.ctaButton {
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: var(--glow-primary);
+  font-family: var(--font-roboto);
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  box-shadow: var(--glow-strong);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: var(--spacing-md);
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .techBadge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

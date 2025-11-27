@@ -1,55 +1,45 @@
 import React from "react";
-
 import styles from "./About.module.css";
+import skills from "../../data/skills.json";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
+  // Group skills by category
+  const groupedSkills = skills.reduce((acc, skill) => {
+    if (!acc[skill.category]) {
+      acc[skill.category] = [];
+    }
+    acc[skill.category].push(skill);
+    return acc;
+  }, {});
+
   return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
-      <div className={styles.content}>
-        <img
-          src={getImageUrl("about/aboutImage.png")}
-          width={190}
-          height={190}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/aboutEfficient.png")} alt="Efficient icon" width={150} height={150}/>
-            <div className={styles.aboutItemText}>
-              <h3>Efficient</h3>
-              <p>
-              Known for my energy, organization, and agility,
-              I consistently deliver results with speed and precision,
-              making me an effective worker and quick learner.
-              </p>
+    <section className={styles.container} id="tooling">
+      <h2 className={styles.title}>Tooling Stack</h2>
+      <p className={styles.subtitle}>
+        Technologies and tools I use to build data-driven solutions
+      </p>
+
+      <div className={styles.categoriesContainer}>
+        {Object.entries(groupedSkills).map(([category, categorySkills]) => (
+          <div key={category} className={styles.category}>
+            <h3 className={styles.categoryTitle}>{category}</h3>
+            <div className={styles.skillsGrid}>
+              {categorySkills.map((skill, index) => (
+                <div key={index} className={styles.skillCard}>
+                  <div className={styles.skillImageWrapper}>
+                    <img
+                      src={getImageUrl(skill.imageSrc)}
+                      alt={skill.title}
+                      className={styles.skillImage}
+                    />
+                  </div>
+                  <div className={styles.skillName}>{skill.title}</div>
+                </div>
+              ))}
             </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/aboutCollaborative.png")} alt="Collaborative icon" width={150} height={150}/>
-            <div className={styles.aboutItemText}>
-              <h3>Collaborative</h3>
-              <p>
-              I thrive in collaborative environments, valuing open 
-              communication and teamwork to tackle complex 
-              challenges and achieve shared goals.
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/aboutVersatile.png")} alt="Verstaile icon" width={150} height={150}/>
-            <div className={styles.aboutItemText}>
-              <h3>Versatile</h3>
-              <p>
-              I thrive on challenges, excelling in structured environments
-              while quickly adapting and mastering new skills, ensuring flexibility 
-              and effectiveness across various tasks and projects.
-              </p>
-            </div>
-          </li>
-        </ul>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -1,35 +1,87 @@
 [
-    {
-      "title": "Python",
-      "imageSrc": "skills/python.png"
-    },
-    {
-      "title": "R",
-      "imageSrc": "skills/r.png"
-    },
-    {
-      "title": "SQL",
-      "imageSrc": "skills/sql.png"
-    },
-    {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
-    },
-    {
-      "title": "Sklearn",
-      "imageSrc": "skills/sklearn.png"
-    },
-    {
-      "title": "Pytorch",
-      "imageSrc": "skills/pytorch.png"
-    }
-    ,
-    {
-      "title": "Solidity",
-      "imageSrc": "skills/solidity.png"
-    },    
-    {
-        "title": "Javascript",
-        "imageSrc": "skills/js.png"
-    }
-  ]
+  {
+    "title": "Python",
+    "category": "Languages",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "SQL",
+    "category": "Languages",
+    "imageSrc": "skills/sql.png"
+  },
+  {
+    "title": "TypeScript",
+    "category": "Languages",
+    "imageSrc": "skills/typescript.png"
+  },
+  {
+    "title": "R",
+    "category": "Languages",
+    "imageSrc": "skills/r.png"
+  },
+  {
+    "title": "MongoDB",
+    "category": "Languages",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "AWS",
+    "category": "Cloud",
+    "imageSrc": "skills/aws.png"
+  },
+  {
+    "title": "Dune",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/dune.jpeg"
+  },
+  {
+    "title": "Nansen",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/nansen.png"
+  },
+  {
+    "title": "Artemis",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/artemis.jpeg"
+  },
+  {
+    "title": "DefiLlama",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/defillama.png"
+  },
+  {
+    "title": "Coingecko",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/coingecko.svg"
+  },
+  {
+    "title": "CoinMarketCap",
+    "category": "Web3 Analytics",
+    "imageSrc": "skills/cmc.png"
+  },
+  {
+    "title": "ClickHouse",
+    "category": "Data Warehouse",
+    "imageSrc": "skills/clickhouse.png"
+  },
+  {
+    "title": "BigQuery",
+    "category": "Data Warehouse",
+    "imageSrc": "skills/bigquery.svg"
+  },
+  {
+    "title": "Snowflake",
+    "category": "Data Warehouse",
+    "imageSrc": "skills/snowflake.png"
+  },
+  {
+    "title": "Trino",
+    "category": "Data Warehouse",
+    "imageSrc": "skills/trino.png"
+  },
+  {
+    "title": "dbt",
+    "category": "Data Warehouse",
+    "imageSrc": "skills/dbt.png"
+  }
+]
